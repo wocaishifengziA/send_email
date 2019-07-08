@@ -8,17 +8,18 @@ settings = {}
 def setup(mail_host, mail_user, mail_pass):
     global settings
     settings = {
-        "mail_host": mail_host,
-        "mail_user": mail_user,
-        "mail_pass": mail_pass
+        "mail_host": mail_host,  # 服务器
+        "mail_user": mail_user,  # 用户名
+        "mail_pass": mail_pass   # 口令
     }
 
 
 def send_email_notify(recv_addr, topic, message):
     """
-    发送邮件， QQ版本
-    :param recv_addr: 接收邮箱
-    :param message:   发送内容 {"topic":"", "content":""}
+    使用QQ邮箱发送邮件
+    :param recv_addr: 接收地址
+    :param topic: 主题
+    :param message: 内容
     :return:
     """
 
